@@ -1,0 +1,56 @@
+/**
+* Icons design
+*/
+
+/* Social icons design */
+/* Social media design */
+.social-media {
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    a {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      border: 1px solid transparent;
+      color: $primary-color;
+      line-height: 30px;
+      text-align: center;
+      @include css3-prefix(border-radius, 50%);
+      &:hover {
+        border: 1px solid $base-color;
+        color: $base-color;
+      }
+    }
+  }
+}
+
+.social-media-bg {
+  li {
+    a {
+      background-color: $primary-color;
+      color: $base-color;
+      &:hover {
+        border: 1px solid $primary-color;
+        background-color: transparent;
+        color: $primary-color;
+      }
+    }
+  }
+}
+.social-media-blue-bg {
+  li {
+    a {
+      background-color: $base-color;
+      color: $white;
+      &:hover {
+        border: 1px solid $base-color;
+        background-color: transparent;
+        color: $base-color;
+      }
+    }
+  }
+}
+/* End */

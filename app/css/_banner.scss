@@ -1,0 +1,134 @@
+/**
+* Banner section design
+*/
+
+
+/* Home Banner design */
+.banner {
+  img {
+    width: 100%;
+  }
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  width: 100%;
+  margin-top: -20px;
+  @include css3-prefix(transform, translate(-50%, -50%));
+  @include mq(tablet-l, max) {
+    margin-top: 0;
+  }
+  @include mq(tablet, max) {
+    top: 25%;
+    @include css3-prefix(transform, translate(-50%, -25%));
+  }
+  h1 {
+    max-width: 575px;
+    color: $base-color;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    @include mq(tablet-l, max) {
+      max-width: 100%;
+      font-size: 30px;
+    }
+  }
+  span {
+    color: $primary-color;
+  }
+}
+.banner-caption {
+  display: inline-block;
+  width: 100%;
+  @include bottom-align;
+  padding: 20px 0;
+  color: $base-color;
+  font-size: 18px;
+  @include mq(tablet, max) {
+    position: relative;
+    padding: 20px;
+    background-color: $gray;
+  }
+  .form-inline {
+    display: inline-block;
+    @include mq(tablet, max) {
+      width: 100%;
+    }
+    input[type='text'] {
+      display: inline-block;
+      height: 40px;
+      width: 340px;
+      @include css3-prefix(border-radius, 20px);
+      @include mq(tablet, max) {
+        @include calc('width', '100% - 38px');
+      }
+    }
+    button {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      height: 40px;
+      min-width: 0;
+      width: 40px;
+      margin-top: 3px;
+      margin-left: -35px;
+      padding: 0;
+      line-height: 40px;
+      @include css3-prefix(border-radius, 50%);
+      @include css3-prefix(box-shadow, none);
+      @include mq(tablet, max) {
+        margin-top: 0;
+        margin-left: -42px;
+      }
+    }
+  }
+}
+/* End */
+
+/* Inner banner design */
+.inner-banner-text {
+  color: $base-color;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  @include center-vertically;
+  @include mq(tablet-l, max) {
+    font-size: 30px;
+  }
+}
+/* End */
+
+/* Banner mask */
+.banner-date-caption {
+  @include center-vertically;
+  top: auto;
+  bottom: 0;
+  margin-bottom: -110px;
+  text-align: right;
+  @include mq(tablet, max) {
+    margin-bottom: -50px;
+  }
+  .mask {
+    display: inline-block;
+    height: 112px;
+    width: 112px;
+    padding: 20px;
+    background-color: $primary-color;
+    color: $base-color;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: center;
+    @include mq(tablet, max) {
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+/* End */

@@ -1,0 +1,20 @@
+/**
+* Home section design
+*/
+
+.banner-caption {
+  .wpcf7-form-control-wrap {
+    display: inline-block;
+  }
+  .wpcf7-not-valid-tip {
+    margin-left: 3rem;
+    @media (max-width: 767px) {
+      margin-left: 20px;
+    }
+  }
+  .wpcf7-not-valid-tip,
+  .wpcf7-response-output {
+    position: absolute;
+  }
+}
+

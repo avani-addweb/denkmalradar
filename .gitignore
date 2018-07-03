@@ -1,0 +1,4 @@
+# Ignore node modules and DS_Store files
+node_modules/
+.DS_Store
+package-lock.json

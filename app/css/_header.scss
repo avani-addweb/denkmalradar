@@ -1,0 +1,55 @@
+/**
+* Header section design
+*/
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  img {
+    max-width: 182px;
+    @include mq(tablet-l, max) {
+      max-width: 80px;
+    }
+  }
+}
+header {
+  .navbar {
+    .dropdown-toggle {
+      &::after {
+        vertical-align: middle;
+      }
+    }
+    .dropdown-menu {
+      min-width: 200px;
+      margin-top: 15px;
+      padding: 0;
+      border: none;
+      @include css3-prefix(border-radius, 0);
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: -7px 0 0 40px;
+        @include tooltiparrow(7px, up, $white);
+        content: '';
+      }
+      @include mq(tablet-l, max) {
+        position: relative !important;
+        margin-top: 0;
+      }
+      .dropdown-item {
+        padding-right: 20px;
+        padding-left: 20px;
+        border-bottom: 1px solid $gray;
+        color: $base-color !important;
+        font-size: 12px;
+        text-transform: uppercase;
+        vertical-align: top;
+        &:hover {
+          background-color: $base-color !important;
+        }
+      }
+    }
+  }
+}
+

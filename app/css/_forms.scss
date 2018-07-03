@@ -1,0 +1,107 @@
+/**
+* Form design
+*/
+
+.form-inline {
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  input[type='number'],
+  input[type='tel'],
+  textarea,
+  select,
+  .resizable-textarea textarea,
+  .form-control {
+    height: 28px;
+    padding: 5px 10px;
+    border: none;
+    background-color: $white;
+    @include css3-prefix(border-radius, 15px);
+    @include css3-prefix(box-sizing, border-box);
+    color: $form-text;
+    font-size: 14px;
+    @include input-placeholder {
+      color: $form-text;
+    }
+    &:focus {
+      outline: none;
+      &:not([readonly]) {
+        border-bottom: none;
+        background-color: $white;
+        @include css3-prefix(box-shadow, none);
+      }
+    }
+  }
+}
+textarea {
+  min-height: 140px;
+}
+.btn,
+.wpcf7-submit {
+  min-height: 28px;
+  min-width: 130px;
+  padding: 4px 20px;
+  background-color: $primary-color;
+  color: $black !important;
+  text-transform: uppercase;
+  @include css3-prefix(border-radius, 15px);
+  svg {
+    color: $black;
+  }
+  &:hover {
+    background-color: $primary-color;
+    color: $black !important;
+  }
+}
+.btn-border {
+  width: auto;
+  border: 1px solid $primary-color;
+  background-color: transparent;
+  color: $primary-color !important;
+  &:hover {
+    background-color: $primary-color;
+    color: $black !important;
+  }
+}
+
+.selectric-wrapper {
+  .label {
+    display: inline-block;
+    height: 38px;
+    width: 100%;
+    padding: 0 30px 0 10px;
+    border: none;
+    background-color: $white;
+    background-image: url('../images/drop-down.png');
+    background-position: center right 10px;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    color: $form-text;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: left;
+    @include css3-prefix(border-radius, 15px);
+  }
+  .selectric-items {
+    border: none;
+    @include css3-prefix(box-shadow, 0 0 7px rgba(0, 0, 0, .3));
+    ul {
+      li {
+        padding: 5px 10px;
+        background-color: $white;
+        color: $form-text;
+        font-size: 14px;
+        text-align: left;
+        &.highlighted,
+        &:hover {
+          background-color: $base-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.wpcf7-validation-errors {
+  text-align: left;
+}
