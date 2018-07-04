@@ -18,7 +18,7 @@ body {
 }
 
 p {
-  color: $black-70;
+  color: $gray;
   font-size: 14px;
   line-height: 25px;
   font-weight: 400;
@@ -27,4 +27,8 @@ p {
 
 strong {
   font-weight: 700;
+}
+
+img {
+  max-width: 100%;
 }
