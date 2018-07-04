@@ -65,3 +65,15 @@
     }
   }
 }
+
+.known-us-wrap {
+  .company-logos {
+    @include css3-sufix(display, flex);
+    @include css3-sufix(flex-wrap, wrap);
+    background-color: #CCC; /* Temporary */
+    .company-logo {
+      display: inline-block;
+      width: 20%;
+    }
+  }
+}
