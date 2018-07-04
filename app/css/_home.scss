@@ -77,3 +77,14 @@
     }
   }
 }
+
+
+.testimonial-wrap {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto;
+    color: $black;
+    font-size: 15px;
+    font-weight: normal;
+  }
+}
