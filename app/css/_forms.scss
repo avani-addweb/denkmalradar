@@ -2,34 +2,31 @@
 * Form design
 */
 
-.form-inline {
-  input[type='text'],
-  input[type='email'],
-  input[type='password'],
-  input[type='number'],
-  input[type='tel'],
-  textarea,
-  select,
-  .resizable-textarea textarea,
-  .form-control {
-    height: 28px;
-    padding: 5px 10px;
-    border: none;
-    background-color: $white;
-    @include css3-prefix(border-radius, 15px);
-    @include css3-prefix(box-sizing, border-box);
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='tel'],
+textarea,
+select,
+.resizable-textarea textarea,
+.form-control {
+  height: 45px;
+  padding: 5px 10px;
+  border: 1px solid $base-color;
+  @include css3-prefix(box-sizing, border-box);
+  color: $gray;
+  font-size: 14px;
+  @extend .border-round-4;
+  @include input-placeholder {
     color: $gray;
-    font-size: 14px;
-    @include input-placeholder {
-      color: $gray;
-    }
-    &:focus {
-      outline: none;
-      &:not([readonly]) {
-        border-bottom: none;
-        background-color: $white;
-        @include css3-prefix(box-shadow, none);
-      }
+  }
+  &:focus {
+    outline: none;
+    &:not([readonly]) {
+      border-bottom: none;
+      background-color: $white;
+      @include css3-prefix(box-shadow, none);
     }
   }
 }
@@ -43,7 +40,22 @@ textarea {
 .button {
   padding: 10px;
   padding-right: 20px;
-  @extend .border-raound-4;
+  @extend .border-round-4;
+  border: none;
+  color: $white;
   font-size: 14px;
   font-weight: 600;
+  @extend .btn-blue;
+  cursor: pointer;
 }
+
+select {
+  display: inline-block !important;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $base-color;
+  background-color: transparent;
+  color: $gray;
+  @extend .border-round-4;
+}
+

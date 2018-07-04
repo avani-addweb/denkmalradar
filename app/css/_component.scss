@@ -1,4 +1,4 @@
-.border-raound-4 {
+.border-round-4 {
   @include css3-prefix(border-radius, 4px);
 }
 .current-memorial-wrap {
@@ -98,6 +98,6 @@
   }
   .grid {
     border: 1px solid $gray;
-    @extend .border-raound-4;
+    @extend .border-round-4;
   }
 }

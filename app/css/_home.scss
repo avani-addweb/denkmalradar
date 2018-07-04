@@ -2,3 +2,66 @@
 * Home section design
 */
 
+.search-form-wrap {
+  max-width: 750px;
+  width: 100%;
+  @include push--auto;
+  text-align: center;
+  p {
+    color: $gray;
+    font-size: 18px;
+  }
+  .search-form {
+    display: inline-block;
+    width: 100%;
+    > div {
+      float: left;
+      display: inline-block;
+    }
+    .form-select {
+      @include css3-sufix(width, calc(26% - 20px));
+      margin-right: 20px;
+    }
+    .form-item {
+      @include css3-sufix(width, calc(36% - 20px));
+      margin-right: 20px;
+      input {
+        width: 100%;
+      }
+    }
+    .form-action {
+      width: 35%;
+      button {
+        height: 45px;
+        width: 100%;
+      }
+    }
+  }
+}
+.advance-search-wrap {
+  text-align: center;
+  span {
+    display: inline-block;
+    color: $black-70;
+    font-size: 16px;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  .advance-search {
+    display: inline-block;
+    width: 100%;
+    background-color: rgba($primary-color, .2);
+    p {
+      margin: 0 30px 0 0;
+    }
+    p,
+    a {
+      display: inline-block;
+    }
+    a {
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+}
