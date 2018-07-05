@@ -559,7 +559,7 @@ $breakpoints: (
   #{$property}: calc(#{$expression}); 
 }
 
-$value: 20px;
+$value: 30px;
 
 // Grid Mixin
 @mixin grid($column: '') {

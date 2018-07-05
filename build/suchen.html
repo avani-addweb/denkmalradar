@@ -58,9 +58,9 @@
 </div></header>
 
   <!-- Search section -->
-  <section class="inner-search-wrap container-fluid my-5">
+  <section class="inner-search-wrap container-fluid p-5">
     <div class="row">
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-sm-8 col-md-8">
         <form class="search-form">
           <div class="form-select">
             <select>
@@ -73,24 +73,26 @@
             <input type="text" name="" placeholder="Wo: Ort, Stadt, PLZ">
           </div>
           <div class="form-action">
-            <button class="button bg-light-blue">Suchen</button>
+            <button class="button bg-light-blue">Denkmal finden</button>
           </div>
         </form>
         <ul class="layout-tabs">
-          <li data-target="list-view">listenansich</li>
-          <li data-target="map-view">kartenansicht</li>
-        </div>
+          <li data-target="list-view" class="button btn-border active">listenansich</li>
+          <li data-target="map-view" class="button btn-border">kartenansicht</li>
+        </ul>
       </div>
-      <div class="col-12 col-md-4">
-        <button class="btn-border">Weitere Filter</button>
-        <div class=""><i class="fa fa-chevron-down" aria-hidden="true"></i> Standardsortierung</div>
+      <div class="col-12 col-sm-4 col-md-4">
+        <div class="filter-wrap">
+          <button class="button btn-border">Weitere Filter</button>
+          <div class="sorting"><i class="fa fa-chevron-down" aria-hidden="true"></i> Standardsortierung</div>
+        </div>
       </div>
     </div>
   </section>
   <!-- Search section -->
 
   <section class="search-page py-5">
-    <div class="list-view-wrap" id="list-view">
+    <div class="list-view-wrap layout-view active" id="list-view">
       <div class="list-view">
         <div class="img-wrap">
           <img src="">
@@ -167,7 +169,7 @@
         </div>
       </div>
     </div>
-    <div class="map-view-wrap" id="map-view">
+    <div class="map-view-wrap layout-view" id="map-view">
       <div class="">
         Coming soon
       </div>
@@ -176,34 +178,34 @@
 
   <footer class="footer">
   <div class="container">
-    <div class="row mv-4">
+    <div class="row mv-4 footer-bottom-link">
       <div class="col-sm-6 col-md-3">
+        <h3>Uber uns</h3>
         <ul>
-          <li><a href="">Uber uns</a></li>
           <li><a href="">Mission</a></li>
           <li><a href="">Ziele</a></li>
           <li><a href="">Kontakt</a></li>
         </ul>
       </div>
       <div class="col-sm-6 col-md-3">
+        <h3>Uber uns</h3>
         <ul>
-          <li><a href="">Uber uns</a></li>
           <li><a href="">Mission</a></li>
           <li><a href="">Ziele</a></li>
           <li><a href="">Kontakt</a></li>
         </ul>
       </div>
       <div class="col-sm-6 col-md-3">
+        <h3>Uber uns</h3>
         <ul>
-          <li><a href="">Uber uns</a></li>
           <li><a href="">Mission</a></li>
           <li><a href="">Ziele</a></li>
           <li><a href="">Kontakt</a></li>
         </ul>
       </div>
       <div class="col-sm-6 col-md-3">
+        <h3>Uber uns</h3>
         <ul>
-          <li><a href="">Uber uns</a></li>
           <li><a href="">Mission</a></li>
           <li><a href="">Ziele</a></li>
           <li><a href="">Kontakt</a></li>
@@ -211,7 +213,7 @@
       </div>
     </div>
     <div class="bottom-footer pv-3">
-      <ul class="links">
+      <ul class="links border-top">
         <li><a href="">Datenschutzerklarung</a></li>
         <li><a href="">Impressum</a></li>
         <li><a href="">kontakt</a></li>

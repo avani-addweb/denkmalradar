@@ -1,0 +1,69 @@
+/**
+* Suchen design
+*/
+
+.inner-search-wrap {
+  @extend .bg-blue-2;
+  .filter-wrap {
+    @include css3-sufix(display, inline-flex);
+    height: 100%;
+    width: 100%;
+    @include css3-prefix(flex-wrap, wrap);
+    @include css3-prefix(align-items, center);
+    @include css3-prefix(justify-content, center);
+    .sorting {
+      @include css3-sufix(display, inline-flex);
+      width: 100%;
+      color: $primary-color;
+      font-weight: 700;
+      cursor: pointer;
+      @include css3-prefix(align-self, flex-end);
+      @include css3-prefix(align-items, center);
+      @include css3-prefix(justify-content, center);
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+  .search-form {
+    .form-action {
+      width: auto;
+    }
+    input,
+    select,
+    button {
+      height: 45px;
+    }
+  }
+  .layout-tabs {
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    li {
+      float: left;
+      display: inline-block;
+      @extend .btn-border;
+      @include css3-prefix(border-radius, 4px 0 0 4px);
+      &:nth-child(2) {
+        @include css3-prefix(border-radius, 0 4px 4px 0);
+      }
+    }
+  }
+}
+
+.search-page {
+  .layout-view {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .list-view-wrap {
+    max-width: 940px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
