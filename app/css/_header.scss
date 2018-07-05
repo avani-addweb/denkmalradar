@@ -1,5 +1,7 @@
 .header {
+  border-bottom: 1px solid $gray;
   .navbar {
+    box-shadow: none;
     a {
       img {
         display: inline-block;
