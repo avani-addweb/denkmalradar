@@ -68,9 +68,9 @@ select {
   border: 2px solid $base-color;
   background-color: $white;
   background-image: url('../images/arrow-down.svg');
-  background-size: 15px auto;
-  background-repeat: no-repeat;
   background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 15px auto;
   color: $gray;
   @extend .border-round-4;
   @include css3-prefix(appearance, none);
