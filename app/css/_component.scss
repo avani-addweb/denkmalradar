@@ -100,8 +100,34 @@
 }
 
 .about-us-wrap {
-  h3 {
+  h2 {
     text-align: center;
+  }
+  .testimonial-carousel {
+    a {
+      span {
+        color: $base-color;
+        font-size: 48px;
+      }
+    }
+    .testimonial {
+      p,
+      span {
+        color: $gray;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      p {
+        color: #666;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+  .testimonial-wrap {
+    padding-top: 30px;
   }
 }
 
@@ -114,16 +140,7 @@
   .company-logos {
     margin-top: 20px;
   }
-}
-.testimonial-carousel {
-  .testimonial {
-    p {
-      color: #666;
-      font-size: 16px;
-      font-weight: 600;
-    }
-    h4 {
-      font-size: 16px;
-    }
+  .border-top {
+    padding-top: 40px;
   }
 }
