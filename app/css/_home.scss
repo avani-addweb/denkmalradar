@@ -5,10 +5,13 @@
   background-color: rgba($primary-color, .2);
 }
 
-
 .search-form-wrap {
   max-width: 750px;
   width: 100%;
+  @media (max-width: 767px) {
+    width: 90%;
+    margin-top: 0;
+  }
   @include push--auto;
   text-align: center;
   p {
@@ -101,25 +104,38 @@
   > div {
     float: left;
     display: inline-block;
+    @media (max-width: 767px) {
+      float: none;
+    }
   }
   .form-select {
     @include css3-sufix(width, calc(26% - 20px));
     margin-right: 20px;
+    /*@media (max-width: 767px) {
+      @include css3-sufix(width, calc(50% - 20px));
+      margin-right: 0;
+    }*/
   }
   .form-item {
     @include css3-sufix(width, calc(36% - 20px));
     margin-right: 20px;
     input {
       height: 60px;
-      width: 100%;
     }
+   /* @media (max-width: 767px) {
+      @include css3-sufix(width, calc(50% - 20px));
+      margin-top: 20px;
+    }*/
   }
   .form-action {
-    width: 35%;
+    @include css3-sufix(width, calc(36% - 20px));
     button {
       height: 60px;
       width: 100%;
     }
+    /*@media (max-width: 767px) {
+      margin-top: 20px;
+    }*/
   }
   input[type='text']:focus {
     border-bottom: 1px solid $gray;

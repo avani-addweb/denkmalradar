@@ -52,7 +52,7 @@ footer {
       padding-bottom: 10px;
       a {
         color: $gray;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
@@ -114,7 +114,10 @@ footer {
     margin: 0 auto;
   }
   .footer-bottom-link {
-    padding-left: 30px;
     padding-bottom: 50px;
+    padding-left: 30px;
+    @media (max-width: 570px) {
+      text-align: center;
+    }
   }
 }

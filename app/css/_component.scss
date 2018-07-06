@@ -21,6 +21,9 @@
       color: $base-color;
       font-size: 16px;
       font-weight: bold;
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
     }
     .active {
       border-bottom: 2px solid $primary-color;
@@ -43,6 +46,27 @@
       font-weight: 600;
       text-align: center;
       @include push--auto;
+      @media (max-width: 992px) {
+        font-size: 28px;
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+      }
+      @media (max-width: 480px) {
+        max-width: 80%;
+        font-size: 18px;
+      }
+      @media (max-width: 420px) {
+        max-width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 1200px) {
+      bottom: 0;
+    }
+    @media (max-width: 520px) {
+      width: 100%;
     }
   }
   .caption-text {
@@ -52,6 +76,20 @@
     font-weight: 400;
     text-align: center;
     @include push--auto;
+    @media (max-width: 992px) {
+      font-size: 24px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+    @media (max-width: 480px) {
+      max-width: 80%;
+      font-size: 16px;
+    }
+    @media (max-width: 420px) {
+      max-width: 100%;
+      font-size: 12px;
+    }
   }
 }
 .current-memorial-wrap {

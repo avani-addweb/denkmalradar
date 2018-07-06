@@ -49,7 +49,7 @@
   @include mq(tablet, max) {
     position: relative;
     padding: 20px;
-    background-color: $gray;
+    /*background-color: $gray;*/
   }
   .form-inline {
     display: inline-block;
