@@ -64,7 +64,6 @@ select {
   display: inline-block !important;
   height: 60px;
   width: 100%;
-  padding: 10px;
   border: 2px solid $base-color;
   background-color: $white;
   background-image: url('../images/arrow-down.svg');
@@ -74,5 +73,8 @@ select {
   color: $gray;
   @extend .border-round-4;
   @include css3-prefix(appearance, none);
+}
+select:focus {
+  border-bottom: 2px solid $base-color !important;
 }
 

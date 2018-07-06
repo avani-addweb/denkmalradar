@@ -49,11 +49,6 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 20px;
-    button {
-      margin: 0;
-      padding: 2px 10px;
-      font-size: 14px;
-    }
   }
   h4 {
     margin-bottom: 10px;
@@ -125,6 +120,9 @@
       height: 60px;
       width: 100%;
     }
+  }
+  input[type='text']:focus {
+    border-bottom: 1px solid $gray;
   }
 }
 .grid-wrap-4 {

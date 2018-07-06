@@ -65,5 +65,56 @@
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
+    .img-wrap {
+      display: inline-block;
+      margin-right: 30px;
+    }
+    .detail-wrap {
+      display: inline-block;
+      padding-top: 15px;
+      span {
+        color: $gray;
+      }
+      svg {
+        margin-right: 10px;
+        display: inline-block;
+      }
+    }
+    .list-view {
+      border: 1px solid $base-color;
+      display: inline-block;
+      width: 100%;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    p {
+      padding-top: 70px;
+    }
+  }
+  .pagination-wrap {
+    .pagination {
+      display: inline-block;
+      padding-top: 30px;
+      li {
+        padding: 15px;
+        font-weight: bold;
+        a {
+          color: $gray;
+        }
+
+      }
+    }
+    li {
+      display: inline-block;
+    }
+    .align-right {
+      float: right;
+      display: inline-block;
+      padding-top: 40px;
+      font-size: 14px;
+      font-weight: bold;
+    }
   }
 }
